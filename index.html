@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="scrollBar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_left">
+                <img class="logo" height="230" src="images/logo.png" alt="">
+                <!-- <div class="home">
+                    <img width="25" src="images/home.svg" alt="" class="filter">
+                </div> -->
+            </div>
+            <div class="nav_right">
+                <svg class="search-icon" fill="white" viewBox="0 0 24 24">
+                    <path
+                        d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z" />
+                </svg>
+
+                <input type="text" name="search" id="search">
+                <span id="placeholder">What do you want to play?</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="left">
+            <h2>Your Playlist</h2>
+            <ul id="songs_list" class="scrollable">
+
+            </ul>
+        </div>
+        <div class="right">
+            <div class="playlists">
+                <h2>Playlists</h2>
+                <div class="albums scrollable">
+                    
+                </div>
+            </div>
+            <div class="searches">
+                <h2>Search Results</h2>
+                <div class="results scrollable">
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div class="playbarContent">
+                    <div class="infoControls">
+                        <p class="songName">/--</p>
+                        <div class="controls">
+                            <img class="prev" src="images/previous.svg" alt="">
+                            <img class="playPause" src="images/play1.svg" alt="">
+                            <img class="next" src="images/next.svg" alt="">
+                        </div>
+                        <div class="durationVolume">
+                            <p class="duration">--/--</p>
+                            <div class="volume filter">
+                                <input type="range" name="volumeRange" id="volumeRange">
+                                <img src="images/volumelow.svg" alt="" class="volumeimg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="seekbarLayer"></div>
+                        <div class="seekbarCircle"></div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

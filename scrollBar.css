@@ -1,0 +1,26 @@
+/* Global scrollbar styling (Chrome, Edge, Safari) */
+.scrollable::-webkit-scrollbar {
+  width: 5px;
+  /* height: 8px; */
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent; /* hide track */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background: transparent; /* hide by default */
+  border-radius: 10px;
+  transition: background 1.5s;
+}
+
+/* When scrolling */
+.scrollable.scrolling::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Firefox */
+/* .scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+} */
